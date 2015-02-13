@@ -1,0 +1,22 @@
+{
+  "name": "bitstarter",
+  "version": "1.0.0",
+  "description": "Basic bitstarter project to explore the MEAN stack",
+  "main": "web.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/soboy2/bitstarter.git"
+  },
+  "keywords": [
+    "bitstarter"
+  ],
+  "author": "Sho <sho.asod@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/soboy2/bitstarter/issues"
+  },
+  "homepage": "https://github.com/soboy2/bitstarter"
+}
