@@ -1,6 +1,14 @@
-var express = require('express');
+var express = require('express'),
+    fs = require('fs'),
+    morgan = require('morgan');
 
-var app = express.createServer(express.logger());
+
+var app = express();
+
+// create a write stream (in append mode)
+var accessLogStream = fs.createWriteStream(__dirname + '/access.log', {flags: 'a'});
+
+app.use(morgan('combined', {stream: accessLogStream}));
 
 app.get('/', function(request, response) {
   response.send('Hello World!');
